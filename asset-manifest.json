@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Roommates/static/css/main.639e0ffe.css",
+    "main.js": "/Roommates/static/js/main.96ae230a.js",
+    "static/js/787.3475603a.chunk.js": "/Roommates/static/js/787.3475603a.chunk.js",
+    "static/media/headerImg.png": "/Roommates/static/media/headerImg.4f6045673b9642819d57.png",
+    "static/media/profilePicture.png": "/Roommates/static/media/profilePicture.a6fb77584b8c8cbd09c8.png",
+    "static/media/Roommates.png": "/Roommates/static/media/Roommates.ab873c71aacf872b7df9.png",
+    "static/media/googlePlay.png": "/Roommates/static/media/googlePlay.86be9635a8b54815160a.png",
+    "index.html": "/Roommates/index.html",
+    "main.639e0ffe.css.map": "/Roommates/static/css/main.639e0ffe.css.map",
+    "main.96ae230a.js.map": "/Roommates/static/js/main.96ae230a.js.map",
+    "787.3475603a.chunk.js.map": "/Roommates/static/js/787.3475603a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.639e0ffe.css",
+    "static/js/main.96ae230a.js"
+  ]
+}
