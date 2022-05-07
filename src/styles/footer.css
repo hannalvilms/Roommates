@@ -1,0 +1,283 @@
+/****************************FOOTER****************************/
+.footer {
+  width: 100vw;
+  height: 156px;
+  left: -1px;
+  bottom: 0;
+  background: var(--white);
+}
+.footer,
+.footer .upper-part .socials-and-logo,
+.footer .socials,
+.store-buttons {
+  position: absolute;
+}
+.footer-hr,
+.footer .links,
+.footer .logo svg {
+  position: relative;
+}
+.footer .logo,
+.footer .upper-part,
+.footer .upper-part .socials-and-logo,
+.footer .socials,
+.footer .socials div {
+  height: 40px;
+}
+/*Footer's upper part*/
+.footer .upper-part {
+  width: 1170px;
+  position: relative;
+  margin: 32px auto;
+  display: flex;
+  align-items: center;
+}
+/*Logo*/
+.footer .logo {
+  width: 214px;
+  margin-right: 40px;
+  margin-bottom: 32px;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+.footer .logo svg {
+  width: 37px;
+  height: 39px;
+  margin-right: 12px;
+}
+.footer .logo h4 {
+  width: 163px;
+  height: 35px;
+  margin-top: 37px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.875em;
+  line-height: 35px;
+  color: var(--logo);
+}
+/*Socials and logo container*/
+.footer .socials-and-logo {
+  width: 40.513%;
+}
+/*Socials*/
+.footer .socials {
+  justify-content: space-between;
+  left: 254px;
+  width: 220px;
+}
+.footer .socials div {
+  width: 40px;
+  border: 1px solid var(--store-buttons);
+  box-sizing: border-box;
+  border-radius: 35px;
+}
+.footer .socials svg {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+  padding: 11px;
+}
+/*App store buttons*/
+.store-buttons {
+  right: 0;
+  height: 50px;
+  width: 32.479%;
+  justify-content: space-between;
+}
+.google-play,
+.app-store {
+  width: 180px;
+  height: 50px;
+  border: 1px solid var(--store-buttons);
+  box-sizing: border-box;
+  border-radius: 40.3846px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Google play*/
+.google-play {
+  right: 575.24px;
+}
+.google-play img {
+  width: 115px;
+  height: 28px;
+}
+/*App store*/
+.app-store img {
+  width: 111px;
+  height: 30px;
+}
+.app-store {
+  right: 375.24px;
+}
+/*Hr divider*/
+.footer-hr {
+  background: var(--light-gray);
+  opacity: 0.43;
+  margin: 0;
+  height: 0;
+}
+/*Footer's lower part*/
+/*Links*/
+.footer .links {
+  width: 1170px;
+  height: 14px;
+  margin: 19px auto 18px;
+  justify-content: space-between;
+}
+/*Links texts*/
+.footer .links p,
+.footer .links a {
+  color: var(--footerT-benefitsT-inputPH);
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.6875em;
+  line-height: 14px;
+  text-decoration: none;
+}
+.footer .links div:nth-of-type(1) {
+  width: 555px;
+  height: 14px;
+}
+.footer .links div:nth-of-type(1) a {
+  margin: 0 15px;
+}
+.footer .links div:nth-of-type(1) a:nth-of-type(1) {
+  margin-left: 0;
+}
+.footer .links div:nth-of-type(2) p,
+.footer .links div:nth-of-type(1) {
+  margin: 0 0 18px 0;
+}
+
+/*Media screens*/
+@media (max-width: 1201px) {
+  /*Footer*/
+  .footer {
+    height: 589px;
+  }
+  /*Footer's upper part*/
+  .footer .upper-part {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    top: 0;
+  }
+  /*Socials and logo container*/
+  .footer .socials-and-logo {
+    width: 100%;
+    height: initial !important;
+    position: relative !important;
+  }
+  /*Logo*/
+  .footer .logo {
+    width: 100%;
+    margin: 30px auto;
+    justify-content: center;
+  }
+  .footer .logo h4 {
+    margin: 0;
+  }
+  .footer .logo svg {
+    width: 37px;
+    height: 39.07px;
+    margin-right: 11.93px;
+    left: 0;
+  }
+  /*Socials*/
+  .footer .socials {
+    left: 0;
+    margin: 100px auto 30px;
+    position: initial;
+  }
+  /*App store & google play*/
+  .footer .store-buttons {
+    position: relative;
+    height: auto;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    left: 0;
+    align-items: center;
+    right: auto;
+  }
+  .google-play,
+  .app-store {
+    width: 345px;
+    height: 50px;
+    right: 0;
+    position: relative;
+  }
+  /*Google play*/
+  .google-play {
+    margin: 0 auto 20px;
+  }
+  .google-play img {
+    width: 115px;
+    height: 28px;
+  }
+  /*App store*/
+  .app-store {
+    margin: 0 auto 30px;
+  }
+  .app-store img {
+    width: 111px;
+    height: 30px;
+  }
+  /*Hr divider*/
+  .footer-hr {
+    top: 280px;
+    margin-bottom: 30px;
+  }
+  /*Footer's lower part*/
+  .links,
+  .links .row,
+  .store-buttons {
+    flex-direction: column;
+  }
+  .footer .links {
+    width: 289px;
+    height: 208px;
+    top: 280px;
+    position: relative;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  .footer .links .row a {
+    margin: 0 0 20px !important;
+  }
+  .footer .links div:nth-of-type(1) {
+    width: auto;
+    margin-bottom: 0;
+    height: 218px;
+  }
+  .footer .links div:nth-of-type(1) a:last-of-type {
+    margin-bottom: 30px !important;
+  }
+  .footer .links div:nth-of-type(2) {
+    height: 28px;
+    margin-bottom: 30px;
+  }
+  .footer .links div:nth-of-type(2) p,
+  .footer .links div:nth-of-type(1) {
+    bottom: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  /*Store buttons*/
+  .google-play,
+  .app-store {
+    width: 92%;
+  }
+  /*Footer links*/
+  .footer .links {
+    width: 80.727%;
+  }
+}

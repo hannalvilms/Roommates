@@ -1,0 +1,84 @@
+/****************************HEADER****************************/
+.header {
+  width: 100vw;
+  height: 666px;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../media/headerImg.png), no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*Header title*/
+.header h1 {
+  width: 49.6356%;
+  height: 25.526%;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.5em;
+  line-height: 86px;
+  text-align: center;
+  color: var(--white);
+  margin: 0 auto 20px;
+  padding-top: 147px;
+}
+/*Header button*/
+.header button {
+  margin: 0 auto;
+  position: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 60px;
+}
+/*Media screens*/
+@media (max-width: 1775px) {
+  .header h1 {
+    width: 62%;
+  }
+}
+@media (max-width: 1201px) {
+  .header h1 {
+    font-size: 3.6875em;
+  }
+}
+@media (max-width: 992px) {
+  .header h1 {
+    width: 92%;
+  }
+  .header button {
+    font-size: 0.875em;
+    line-height: 16px;
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.4375em;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    height: 538px;
+  }
+  .header h1 {
+    padding-top: 50px;
+    margin: 0 15px auto;
+    font-size: 2.25em;
+    line-height: 43px;
+  }
+}
+
+@media (max-width: 343px) {
+  .header h1 {
+    font-size: 1.65em;
+    width: 85%;
+    margin: 0 auto 40px;
+  }
+  .header button {
+    width: 90%;
+  }
+}

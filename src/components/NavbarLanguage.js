@@ -1,0 +1,19 @@
+function NavbarLanguage() {
+  return (
+    <div className="language-selection">
+      <h5>US</h5>
+      <div className="language-arrow">
+        <svg
+          width="12"
+          height="6"
+          viewBox="0 0 12 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0.306249 -5.1115e-07L6.15312 5.84687L12 0" fill="#6B6F7B" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+export default NavbarLanguage;

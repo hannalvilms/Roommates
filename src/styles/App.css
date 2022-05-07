@@ -1,0 +1,64 @@
+:root {
+  /*Colors*/
+  --bg-color: #f5f6f8;
+  --white: #fff;
+  --accent: #4079ff;
+  --light-grey: #c8cfd2;
+  --store-buttons: #e0e5e8;
+  --footerT-benefitsT-inputPH: #63686b;
+  --navbarHr-arrow: #6b6f7b;
+  --logo: #333333;
+  --user-and-language: #2e2e2e;
+  --language-border: #eaeaea;
+  --main-text: #1b2125;
+  --financing-bg: #f4f7ff;
+  --range-bg: #eaedf1;
+  /*Fonts*/
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+}
+body {
+  background: var(--bg-color);
+  margin: 0;
+}
+#root,
+html {
+  height: 100%;
+  min-height: 100vh;
+}
+.App {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+}
+/***Commonly used elements***/
+/*Input border*/
+.input-border {
+  border: 1px solid var(--light-grey);
+  box-sizing: border-box;
+  border-radius: 30px;
+  outline: none;
+}
+/*Flex*/
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+/*Buttons*/
+.blue-button {
+  background: var(--accent);
+  border-radius: 40px;
+  border: none;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+}
