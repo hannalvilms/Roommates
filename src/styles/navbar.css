@@ -26,7 +26,9 @@
   color: var(--user-and-language);
 }
 /*Mobile menu*/
-span, .navbar .account, .mobile-menu {
+span,
+.navbar .account,
+.mobile-menu {
   display: none;
 }
 /*Logo*/
@@ -428,6 +430,9 @@ span, .navbar .account, .mobile-menu {
     height: 60px;
   }
   /*Mobile menu button*/
+  #mobile-menu-btn {
+    z-index: 200;
+  }
   span {
     margin: 0 15px;
     top: 21px;
@@ -450,7 +455,6 @@ span, .navbar .account, .mobile-menu {
     background: var(--main-text);
     border-radius: 1px;
     position: relative;
-    z-index: 200;
   }
   span::before {
     top: -6px;
@@ -458,9 +462,20 @@ span, .navbar .account, .mobile-menu {
   span::after {
     top: -18px;
   }
+  .close span {
+    top: 28px;
+    transform: rotate(45deg);
+  }
+  .close span::after {
+    display: none;
+  }
+  .close span::before {
+    top: -12px;
+    transform: rotate(90deg);
+  }
+
   /*Mobile menu*/
   .mobile-menu {
-    display: none;
     width: 100%;
     position: absolute;
     top: 0;

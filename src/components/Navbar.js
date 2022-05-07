@@ -1,3 +1,4 @@
+import { useState } from "react";
 /* Images */
 import Roommates from "../media/Roommates.png";
 import Account from "../media/Account.png";
@@ -9,10 +10,21 @@ import NavbarUser from "./NavbarUser";
 import NavbarLanguage from "./NavbarLanguage";
 import SearchBar from "./SearchBar";
 function Navbar() {
+  let [showed, setShowed] = useState("true");
+  function toggle(value, setValue) {
+    value = !value;
+    setValue(value);
+    console.log(value);
+  }
   return (
     <div className="navbar">
       <div className="left-side row">
-        <div id="mobile-menu-btn">
+        <div
+          id="mobile-menu-btn"
+          onClick={() => toggle(showed, setShowed)}
+          style={{ position: showed ? "relative" : "fixed" }}
+          className={showed ? "" : 'close'}
+        >
           <span />
         </div>
         <div className="logo">
@@ -21,7 +33,11 @@ function Navbar() {
         <img className="account" alt="account" src={Account} />
         <SearchBar />
       </div>
-      <div className="mobile-menu" id="mobile-menu">
+      <div
+        className="mobile-menu"
+        id="mobile-menu"
+        style={{ display: showed ? "none" : "flex" }}
+      >
         <a href="/">Places to stay</a>
         <a href="/">Mortgage</a>
         <a href="/">Experiences</a>
