@@ -14,7 +14,6 @@ function Navbar() {
   function toggle(value, setValue) {
     value = !value;
     setValue(value);
-    console.log(value);
   }
   return (
     <div className="navbar">

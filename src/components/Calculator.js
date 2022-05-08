@@ -1,17 +1,30 @@
+import { useState } from "react";
+import NumberFormat from 'react-number-format';
 function Calculator() {
-  function handleInputChange(e) {
+  let [propValue, setPropValue] = useState(250000);
+  let [rangeValue, setRangeValue] = useState(50);
+  //range
+  function rangeChange(e) {
     let target = e.target;
     if (e.target.type !== "range") {
       target = document.getElementById("range");
     }
+    //calculate input tracks colorful background
     const min = target.min;
     const max = target.max;
     const val = target.value;
-
     target.style.backgroundSize = ((val - min) * 100) / (max - min) + "% 100%";
-    console.log(target.value);
+    //Set new range value
+    rangeValue = target.value;
+    setRangeValue(rangeValue);
   }
-  const kk  = 'kkk';
+  //Get property value
+  function propertyValue(e) {
+    //assing new value to property value
+    propValue = e.target.value;
+    //remove dot's from number format and set new property value
+    setPropValue(propValue.split('.').join(""));
+  }
   return (
     <div className="calculator">
       <h3>Take the easy first step toward a mortgage</h3>
@@ -19,7 +32,13 @@ function Calculator() {
         <div className="column property-value">
           <p>Property value</p>
           <p className="input-r">R$</p>
-          <input type="number" className="input-border"></input>
+          <NumberFormat
+            value={propValue}
+            thousandSeparator={'.'}
+            decimalSeparator={','} 
+            onInput={(e) => propertyValue(e)}
+            className="input-border numberFormatInput"
+          />
         </div>
         <div className="calculator-row row term">
           <p>Term</p>
@@ -34,7 +53,7 @@ function Calculator() {
               <b>R$&nbsp;</b>
             </p>
             <p>
-              <b>125.000 {kk}</b>
+              <b>{((rangeValue * propValue) / 100).toLocaleString("pt-BR")}</b>
             </p>
           </div>
           <input
@@ -42,7 +61,7 @@ function Calculator() {
             id="range"
             min="10"
             max="90"
-            onInput={(e) => handleInputChange(e)}
+            onInput={(e) => rangeChange(e)}
           />
           <div className="calculator-row row">
             <p>10%</p>
@@ -54,7 +73,11 @@ function Calculator() {
           <p>Financing</p>
           <div>
             <h6 className="input-r">R$ &nbsp;</h6>
-            <h6>XXX.XXX</h6>
+            <h6>
+              {((propValue - (rangeValue * propValue) / 100)).toLocaleString(
+                "pt-BR"
+              )}
+            </h6>
           </div>
         </div>
         <div className="column cpf">
